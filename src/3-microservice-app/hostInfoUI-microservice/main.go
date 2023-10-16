@@ -5,8 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	info "github.com/Monishparameswaran/go-microservice/ContainerInfo"
 	"html/template"
+
+	info "github.com/Monishparameswaran/go-microservice/ContainerInfo"
 )
 
 type HostInfo struct {
@@ -90,6 +91,6 @@ func main() {
 
 	fs := http.FileServer(http.Dir("static/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
-
+	log.Println("Started serving at http://localhost:8084")
 	log.Fatal(http.ListenAndServe(":8084", nil))
 }
