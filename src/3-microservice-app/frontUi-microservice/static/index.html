@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend UI</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #ffeda3ec;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 30px 30px 10px rgb(255, 255, 255);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0074d9;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        h6 {
+            color: #ffec9f;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        p {
+            color: #ff2f00;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        ul {
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+            color: #37ff7d;
+        }
+        a {
+            text-decoration: none;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff229cec;
+            box-shadow: 10 0 10px rgb(238, 105, 255);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome,This is Monish</h1>
+        <p>Explore the MicroService-based application:</p>
+        <ul>
+            <li>Frontend service serves at port 8080</li>
+            <li>Hostinfo service serves at port 8084</li>
+            <li>Hello UI service serves at port 8082</li>
+        </ul>
+        <p>Developed to practice:</p>
+<ul>
+    <li>Dockerization</li>
+    <li>Container orchestration</li>
+    <li>Understanding Microservices</li>
+</ul>
+
+        <a href="/hello" class="btn">Hello</a>
+        <a href="/hostinfo" class="btn">Host Info</a>
+    </div>
+</body>
+</html>
