@@ -1,8 +1,6 @@
 FROM golang:alpine as builder
 WORKDIR /app
-COPY ./static/ .
-COPY main.go .
-COPY go.mod .
+COPY . .
 RUN go mod download 
 RUN go build main.go
 
